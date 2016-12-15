@@ -1,6 +1,8 @@
 # war-simulator
 Simulador do jogo WAR para a matria de Programação Imperativa e Orientada a Objetos
 
+![Imagem do jogo war](https://i3.zst.com.br/thumbs/45/e/12/4189284.jpg)
+
 Guilherme Soares Valdevieso 92859
 Pedro da Cruz Chagas        94028
 
