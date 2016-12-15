@@ -11,4 +11,7 @@ Pedro da Cruz Chagas        94028
 - [ ] Realizar a divisão das tarefas
 
 # Revisões:
-  * Criação do arquivo README.md e do repositório             14/12/2016
+  Descrição | Data
+------------ | -------------
+Criação do arquivo README.md e do repositório  | 14/12/2016
+
