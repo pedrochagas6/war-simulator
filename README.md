@@ -1,5 +1,5 @@
 # war-simulator
-Simulador do jogo WAR para a matria de Programação Imperativa e Orientada a Objetos
+Simulador do jogo WAR para a matéria de Programação Imperativa e Orientada a Objetos
 
 ![Imagem do jogo war](https://i3.zst.com.br/thumbs/45/e/12/4189284.jpg)
 
