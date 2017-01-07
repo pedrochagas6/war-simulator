@@ -1,0 +1,13 @@
+package execucao;
+
+import classes.Menu;
+
+public class Teste {
+	public static void main(String[] args) {
+		Menu demonstracao = new Menu();
+		
+		demonstracao.menuPrincipal();
+		demonstracao.escolhaJogadores();
+		
+	}
+}

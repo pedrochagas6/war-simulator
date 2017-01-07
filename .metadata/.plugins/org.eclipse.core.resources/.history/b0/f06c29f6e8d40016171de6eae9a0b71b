@@ -1,0 +1,11 @@
+package execucao;
+
+import classes.Territorio;
+
+public class Teste {
+	public static void main(String[] args) {
+		Territorio teste = new Territorio(ASIA, "china", "vermelho");
+		
+		System.out.println(teste);
+	}
+}

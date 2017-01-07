@@ -1,7 +1,7 @@
-package src.classes;
+package classes;
 
 import classes.Exercito;
 
 public class Terrestre extends Exercito {
-
+	
 }

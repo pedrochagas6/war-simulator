@@ -1,0 +1,13 @@
+package classes;
+
+public class MapaMundi {
+	Territorio[][] mapaMundi = new Territorio[5][8];
+	
+	public void construir() {
+		for(int i=0; i<5; i++){
+			for(int j=0; j<8; j++){
+				Terri
+			}
+		}
+	}
+}

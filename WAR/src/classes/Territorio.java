@@ -1,4 +1,4 @@
-package classes;
+package src.classes;
 
 public class Territorio {
 	
@@ -14,6 +14,8 @@ public class Territorio {
 	private String nome = new String();
 	private String cor = new String();
 	private Continente continente;
+	//private List<Terrestre> exercitosTerrestresEmOcupacao;
+	//private List<Aereo> exercitosAereosEmOcupacao;
 	
 	
 	public Territorio(Continente continente, String nome, String cor) {

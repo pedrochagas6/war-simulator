@@ -1,0 +1,30 @@
+package classes;
+
+import java.util.Scanner;
+
+public class Menu {
+	public int resposta;
+	public Scanner entrada = new Scanner(System.in);
+	
+	public void menuPrincipal() {
+		do {
+			System.out.println("WAR\n");
+			System.out.println("Iniciar Partida (Digite 1)");
+			
+			this.resposta = this.entrada.nextInt();
+		} while(this.resposta != 1);
+	}
+	
+	public void escolhaJogadores() {
+		do {
+			System.out.println("Escolha uma cor:\n");
+			
+			System.out.println("1. Vermelho");
+			System.out.println("2. Azul");
+			System.out.println("3. Vermelho");
+			System.out.println("\nFaça a sua escolha");
+			
+			this.resposta = this.entrada.nextInt();
+		} while(this.resposta < 1 && this.resposta > 3);
+	}
+}

@@ -1,0 +1,36 @@
+package classes;
+
+import java.util.Scanner;
+
+public class Menu {
+	Scanner entrada = new Scanner(System.in);
+	
+	public void menuPrincipal() {
+		String resposta;
+		
+		System.out.println("WAR\n");
+		System.out.println("Iniciar Partida (Press Enter)");
+		
+		resposta = entrada.next();
+		escolhaJogadores();
+	}
+	
+	public void escolhaJogadores() {
+		int resposta;
+		
+		System.out.println("Escolha uma cor:\n");
+		
+		System.out.println("1. Vermelho");
+		System.out.println("2. Azul");
+		System.out.println("3. Vermelho");
+		System.out.println("\nFaça a sua escolha");
+		
+		resposta = entrada.nextInt();
+		if(resposta < 1 && resposta > 3){
+			System.out.println("Invalida");
+			escolhaJogadores();
+		} else {
+			
+		}
+	}
+}
