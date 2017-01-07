@@ -15,6 +15,7 @@ public class Territorio {
 	private String cor = new String();
 	private Continente continente;
 	
+	
 	public Territorio(Continente continente, String nome, String cor) {
 		super();
 		this.continente = continente;
