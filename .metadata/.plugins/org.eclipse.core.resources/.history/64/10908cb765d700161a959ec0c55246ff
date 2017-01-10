@@ -1,0 +1,17 @@
+package classes;
+
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class MapaMundi {
+	Territorio[][] mapaMundi = new Territorio[5][8];
+	
+	public void construir() {
+		Scanner scanner = new Scanner(new FileReader("mapaMundi.txt")).useDelimiter("\\||\\n");
+		for(int i=0; i<5; i++){
+			for(int j=0; j<8; j++){
+				//fazer a construcao atraves de um arquivo!
+			}
+		}
+	}
+}

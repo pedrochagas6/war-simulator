@@ -1,24 +1,15 @@
-package src.classes;
+package classes;
 
 public class Territorio {
 	
-	public enum Continente {
-		AFRICA,
-		AMERICA_DO_NORTE,
-		AMERICA_DO_SUL,
-		ASIA,
-		EUROPA,
-		OCEANIA;
-	}
-	
 	private String nome = new String();
 	private String cor = new String();
-	private Continente continente;
+	private String continente; //mudar para Continente
 	//private List<Terrestre> exercitosTerrestresEmOcupacao;
 	//private List<Aereo> exercitosAereosEmOcupacao;
 	
 	
-	public Territorio(Continente continente, String nome, String cor) {
+	public Territorio(String continente, String nome, String cor) {
 		super();
 		this.continente = continente;
 		this.nome = nome;
