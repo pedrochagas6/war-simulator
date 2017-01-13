@@ -1,0 +1,33 @@
+package classes;
+
+public class Jogador {
+	private String cor;
+	private int exercitosDisponiveis;
+	private int terretoriosPertencentes;
+	
+	public Jogador(String cor) {
+		this.cor = cor;
+		this.exercitosDisponiveis = 0;
+		this.terretoriosPertencentes = 0;
+	}
+	
+	public int getExercitosDisponiveis() {
+		return exercitosDisponiveis;
+	}
+
+	public void setExercitosDisponiveis(int exercitosDisponiveis) {
+		this.exercitosDisponiveis = exercitosDisponiveis;
+	}
+
+	public int getTerretoriosPertencentes() {
+		return terretoriosPertencentes;
+	}
+
+	public void setTerretoriosPertencentes(int terretoriosPertencentes) {
+		this.terretoriosPertencentes = terretoriosPertencentes;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+}

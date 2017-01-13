@@ -1,0 +1,30 @@
+package execucao;
+
+import java.io.FileNotFoundException;
+
+import classes.Jogador;
+import classes.MapaMundi;
+import classes.Menu;
+
+public class Teste {
+	public static void main(String[] args) {
+		//Menu demonstracao = new Menu();
+		
+		//demonstracao.menuPrincipal();
+		//demonstracao.escolhaJogadores();
+		
+		//Jogador jogador1 = new Jogador(demonstracao.corEscolhida);
+		
+		MapaMundi mapa = new MapaMundi();
+		
+		try {
+			mapa.construir();
+		} catch(FileNotFoundException e) {
+			System.out.println("Arquivo nao encontrado");
+		}
+		
+		System.out.println(mapa.getMapaMundi());
+		
+		
+	}
+}

@@ -8,22 +8,33 @@ import classes.Menu;
 
 public class Teste {
 	public static void main(String[] args) {
-		//Menu demonstracao = new Menu();
+		Menu demonstracao = new Menu();
 		
-		//demonstracao.menuPrincipal();
-		//demonstracao.escolhaJogadores();
+		demonstracao.menuPrincipal();
+		demonstracao.escolhaJogadores();
 		
-		//Jogador jogador1 = new Jogador(demonstracao.corEscolhida);
+		//Criacao doa jogadores da partida
+		Jogador jogador1 = new Jogador(demonstracao.corEscolhidaJogador, false);
+		Jogador jogadorMaquina = new Jogador(demonstracao.corEscolhidaMaquina, true);
 		
+		//Construcao do mapa Mundi e verificacao
 		MapaMundi mapa = new MapaMundi();
-		
 		try {
 			mapa.construir();
 		} catch(FileNotFoundException e) {
 			System.out.println("Arquivo nao encontrado");
 		}
 		
-		System.out.println(mapa.getMapaMundi());
+		//destribuicao inicial dos territorios aleatoriamente
+		mapa.distribuirTerritoriosEntreOsJogadores(jogador1, jogadorMaquina);
+		
+		//Distribuicao dos exercitos terrestres
+		mapa.distribuirExercitosTerrestres(jogador1);
+		mapa.distribuirExercitosTerrestres(jogadorMaquina);
+		
+		//Distribuicao dos exercitos Aereos
+		mapa.distribuirExercitosAereos(jogador1);
+		mapa.distribuirExercitosAereos(jogadorMaquina);
 		
 		
 	}

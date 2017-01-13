@@ -52,8 +52,4 @@ public class Jogador {
 	public void decrementarExercitosAereos() {
 		this.exercitosAereosDisponiveis--;
 	}
-	
-	public void acrescentaTerritorio() {
-		this.terretoriosPertencentes++;
-	}
 }

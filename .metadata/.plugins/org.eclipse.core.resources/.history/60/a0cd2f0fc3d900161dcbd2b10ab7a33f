@@ -21,7 +21,6 @@ public class MapaMundi {
 					String nome = scanner.next();
 					Territorio aSerInserido;
 					
-					//Ver o fazer aobre isso
 					if(continente == 1)
 						aSerInserido = new Territorio(Continente.AFRICA, nome, "Nenhuma");
 					else if(continente == 2)
@@ -58,48 +57,16 @@ public class MapaMundi {
 						escolha = aleatorio.nextInt(3);
 					while(escolha == 0);
 					
-					if(escolha == 1){ //atribui a cor do jogador ao territorio, alem de incrementar os territorios do jogador
+					if(escolha == 1){
 						this.mapaMundi[i][j].setCor(jogador1.getCor());
-						jogador1.acrescentaTerritorio();
+						jogador1.setTerretoriosPertencentes(jogador1.getTerretoriosPertencentes() + 1);
 					} else {
 						this.mapaMundi[i][j].setCor(jogadorMaquina.getCor());
-						jogadorMaquina.acrescentaTerritorio();
+						jogadorMaquina.setTerretoriosPertencentes(jogadorMaquina.getTerretoriosPertencentes() + 1);
 					}
 					
 				}
 			}
-		}
-	}
-
-	public void distribuirExercitosTerrestres(Jogador jogador) {
-		//atribuicao dos exercitos disponiveis para distribuicao
-		jogador.setExercitosTerrestresDisponiveis();
-		
-		while(jogador.getExercitosTerrestresDisponiveis() > 0) {
-			if(jogador.isMaquina()) {
-				//logica
-				
-			} else {
-				
-			}
-			
-			jogador.decrementarExercitosTerrestres();
-		}
-	}
-	
-	public void distribuirExercitosAereos(Jogador jogador) {
-		//atribuicao dos exercitos disponiveis para distribuicao
-		jogador.setExercitosAereosDisponiveis();
-				
-		while(jogador.getExercitosAereosDisponiveis() > 0) {
-			if(jogador.isMaquina()) {
-				//logica
-						
-			} else {
-						
-			}
-					
-			jogador.decrementarExercitosAereos();
 		}
 	}
 }

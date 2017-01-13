@@ -21,7 +21,7 @@ public class MapaMundi {
 					String nome = scanner.next();
 					Territorio aSerInserido;
 					
-					//Ver o fazer aobre isso
+					//
 					if(continente == 1)
 						aSerInserido = new Territorio(Continente.AFRICA, nome, "Nenhuma");
 					else if(continente == 2)

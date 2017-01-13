@@ -17,8 +17,8 @@ public class Jogador {
 		return exercitosTerrestresDisponiveis;
 	}
 
-	public void setExercitosTerrestresDisponiveis() {
-		this.exercitosTerrestresDisponiveis = this.terretoriosPertencentes / 2;
+	public void setExercitosTerrestresDisponiveis(int exercitosDisponiveis) {
+		this.exercitosTerrestresDisponiveis = exercitosDisponiveis;
 	}
 	
 	public int getExercitosAereosDisponiveis() {
@@ -26,7 +26,7 @@ public class Jogador {
 	}
 
 	public void setExercitosAereosDisponiveis() {
-		this.exercitosAereosDisponiveis = this.terretoriosPertencentes / 3;
+		this.exercitosAereosDisponiveis = this.terretoriosPertencentes / 2;
 	}
 
 	public int getTerretoriosPertencentes() {
@@ -51,9 +51,5 @@ public class Jogador {
 	
 	public void decrementarExercitosAereos() {
 		this.exercitosAereosDisponiveis--;
-	}
-	
-	public void acrescentaTerritorio() {
-		this.terretoriosPertencentes++;
 	}
 }

@@ -6,6 +6,5 @@ public enum Continente {
 	AMERICA_DO_SUL,
 	ASIA,
 	EUROPA,
-	OCEANIA,
-	NENHUM;
+	OCEANIA;
 }
